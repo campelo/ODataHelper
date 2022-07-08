@@ -1,6 +1,4 @@
-﻿using ODataQueryHelper.Core.Extensions;
-
-namespace ODataQueryHelper.Core
+﻿namespace ODataQueryHelper.Core
 {
     /// <summary>
     /// OData query parser for Document
@@ -8,10 +6,7 @@ namespace ODataQueryHelper.Core
     /// <typeparam name="T">Document of type <typeparamref name="T"/></typeparam>
     public class ODataParser<T> : IODataParser<T> where T : class
     {
-        private static readonly string FILTER = "$filter";
-        private static readonly string ORDERBY = "$orderby";
-        private static readonly string SKIP = "$skip";
-        private static readonly string TOP = "$top";
+
         /// <summary>
         /// Try and Parse OData Query expression
         /// </summary>
